@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Orbitron';
+  src: local('Orbitron'),
+    url(../assets/fonts/Orbitron-Regular.ttf) format('truetype');
+}
+
+* {
+  font-family: Orbitron;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  background-color: #202020;
+}

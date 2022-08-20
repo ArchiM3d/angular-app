@@ -1,0 +1,229 @@
+/* Texts */
+.landing-title-h1 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #17cf97;
+}
+
+.landing-title-h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.landing-text {
+  font-size: 1em;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+/* Animation Words */
+.wordCarousel {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  color: #eee;
+  font-size: 1em;
+  div {
+    overflow: hidden;
+    position: relative;
+    float: right;
+    font-size: 1em;
+    height: 65px;
+    padding-top: 10px;
+    margin-top: -10px;
+    li {
+      font-size: 1em;
+      color: #eee;
+      font-weight: 700;
+      padding: 0 10px;
+      height: 45px;
+      margin-bottom: 45px;
+      display: block;
+    }
+    li:hover {
+      font-size: 1.2em;
+      color: #17cf97;
+      font-weight: 900;
+      padding: 0 10px;
+      height: 45px;
+      margin-bottom: 45px;
+      display: block;
+    }
+  }
+}
+
+.flip2 {
+  animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+.flip3 {
+  animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+.flip4 {
+  animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+.flip5 {
+  animation: flip5 12s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+@keyframes flip2 {
+  0% {
+    margin-top: -180px;
+  }
+  5% {
+    margin-top: -90px;
+  }
+  50% {
+    margin-top: -90px;
+  }
+  55% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -180px;
+  }
+}
+
+@keyframes flip3 {
+  0% {
+    margin-top: -270px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+
+@keyframes flip4 {
+  0% {
+    margin-top: -360px;
+  }
+  5% {
+    margin-top: -270px;
+  }
+  25% {
+    margin-top: -270px;
+  }
+  30% {
+    margin-top: -180px;
+  }
+  50% {
+    margin-top: -180px;
+  }
+  55% {
+    margin-top: -90px;
+  }
+  75% {
+    margin-top: -90px;
+  }
+  80% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -360px;
+  }
+}
+
+@keyframes flip5 {
+  0% {
+    margin-top: -450px;
+  }
+  5% {
+    margin-top: -360px;
+  }
+  20% {
+    margin-top: -360px;
+  }
+  25% {
+    margin-top: -270px;
+  }
+  40% {
+    margin-top: -270px;
+  }
+  45% {
+    margin-top: -180px;
+  }
+  60% {
+    margin-top: -180px;
+  }
+  65% {
+    margin-top: -90px;
+  }
+  80% {
+    margin-top: -90px;
+  }
+  85% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -450px;
+  }
+}
+
+/* Images */
+#images-id {
+  display: flex;
+  margin: auto;
+  height: 303px;
+  width: 303px;
+  background-image: url('https://www.arch-web.fr/assets/component.png');
+}
+
+#images-id:hover {
+  -webkit-animation-name: imagesSrc;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes imagesSrc {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+  0% {
+    background-image: url('https://www.arch-web.fr/assets/component.png');
+    transform: rotate(0deg);
+  }
+  25% {
+    background-image: url('https://www.arch-web.fr/assets/component-html.png');
+    transform: rotate(90deg);
+  }
+  50% {
+    background-image: url('https://www.arch-web.fr/assets/component-css.png');
+    transform: rotate(180deg);
+  }
+  75% {
+    background-image: url('https://www.arch-web.fr/assets/component-js.png');
+    transform: rotate(270deg);
+  }
+}
